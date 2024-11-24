@@ -1,0 +1,58 @@
+
+
+.menu-button{
+    color: white;
+    background-color: black;
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    
+}
+
+.nav-bar-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+}
+.menu1{
+    display: flex;
+    margin: 20px;
+
+}
+.menu2{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    margin-right: 30px;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brand-name{
+    color: white;
+}
+.search-button{
+    color: white;
+    background-color: black;
+    border-style: none;
+    font-size: large;
+}
+
+.profile-button{
+    color: white;
+    background-color: black;
+    border-style: none;
+    font-size: large;
+}
+
+.cart-button{
+    color: white;
+    background-color: black;
+    border-style: none;
+    font-size: large;
+}
