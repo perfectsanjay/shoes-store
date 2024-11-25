@@ -3,3 +3,38 @@
     padding: 0px;
     box-sizing: border-box;    
 }
+.top-img{
+    display: flex;
+}
+
+.title-pick{
+    margin: 10px;
+}
+
+
+.first-pick{
+    width: 700px;
+    height: 1070px;
+
+}
+
+.second-pick{
+    width: 800px;
+  
+}
+
+.select-title{
+    text-align: center;
+}
+
+.select-img{
+    width: 1100px;
+    height: 1200px;
+}
+
+.JD-select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
