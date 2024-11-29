@@ -1,0 +1,20 @@
+.cat-img{
+    width: 250px;
+    height: 300px;
+
+}
+.category-img-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap:30px;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+
+
+}
+
+.category-container{
+    margin-top: 10px;
+}

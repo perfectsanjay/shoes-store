@@ -3,22 +3,22 @@ import './Carousel.style.scss'
 const imageData = [
   {
     id: 1,
-    url: "src/assets/shoes-images/bhautik-patel-ui8yd5Qxv-Y-unsplash.jpg",
+    url: "/shoes-images/bhautik-patel-ui8yd5Qxv-Y-unsplash.jpg",
     alt: "image1",
   },
   {
     id: 2,
-    url: "src/assets/shoes-images/domino-studio-164_6wVEHfI-unsplash.jpg",
+    url: "/shoes-images/domino-studio-164_6wVEHfI-unsplash.jpg",
     alt: "image2",
   },
   {
     id: 3,
-    url: "src/assets/shoes-images/felipepelaquim-6zO5VKogoZE-unsplash.jpg",
+    url: "/shoes-images/felipepelaquim-6zO5VKogoZE-unsplash.jpg",
     alt: "image3",
   },
   {
     id: 4,
-    url: "src/assets/shoes-images/maksim-larin-ezdrvzA1hZw-unsplash.jpg",
+    url: "/shoes-images/maksim-larin-ezdrvzA1hZw-unsplash.jpg",
     alt: "image4",
   },
 ];
