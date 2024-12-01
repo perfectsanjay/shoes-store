@@ -28,7 +28,7 @@ const Search = ({toggleSearch}) =>{
             </div> 
         <div className="search-img">
         {query && results.map((item)=>(
-            <div className="img-cat" key={item.id}>
+            <div className="img-category-search" key={item.id}>
             <img className="cat-imge" src={item.imageUrl} alt={item.alt} />
             <h3>{item.name}</h3>
             <p>₹{item.price}</p>

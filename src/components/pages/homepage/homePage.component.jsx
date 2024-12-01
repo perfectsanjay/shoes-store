@@ -4,6 +4,7 @@ import Carousel from "../../Carousel/Carousel.component";
 import BrandCategory from "../../brandCategory/brandCategory.component";
 import Category from "../../Category/Category.component";
 import Footer from "../../footer/Footer.component";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return(

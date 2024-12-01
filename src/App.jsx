@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import CategoryPage from './components/pages/categoryPage/categoryPage.component'
 import data from './components/pages/categoryPage/utils.data'
 import NavBar from '../src/components/NavBar/NavBar.components'
+import ProductPage from './components/pages/ProductPage/ProductPage.component'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
     <Routes>
       <Route path='/' element={<HomePage/>}/>
       <Route path="/shop/:category" element={<CategoryPage  categories = {data}/>}/>
+      <Route path="/shop/product/:id" element={<ProductPage products = {data} />}></Route>
     </Routes>
       
 

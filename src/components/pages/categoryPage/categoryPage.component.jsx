@@ -2,6 +2,7 @@ import React from "react";
 import "./categoryPage.style.scss";
 import data from "./utils.data";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CategoryPage = ({ categories }) => {
   const { category } = useParams();
@@ -16,9 +17,11 @@ const CategoryPage = ({ categories }) => {
       <div className="category-img-container">
         {selectedCategory.items.map((item) => (
           <div className="img-cat" key={item.id}>
-            <img className="cat-img" src={item.imageUrl} alt={item.alt} />
-            <h3>{item.name}</h3>
-            <p>₹{item.price}</p>
+            <Link to={`/shop/product/${item.id}`}>
+              <img className="cat-img" src={item.imageUrl} alt={item.alt} />
+              <h3>{item.name}</h3>
+              <p>₹{item.price}</p>
+              </Link>
           </div>
         ))}
       </div>
