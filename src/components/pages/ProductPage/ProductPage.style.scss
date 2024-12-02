@@ -48,3 +48,16 @@
     flex-direction: row;
     gap: 50px;
 }
+.image-also{
+    width: 200px;
+    height: 200px;
+}
+.also-sub-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    // margin: 10px;
+}
+
+.like-img-container{
+    margin: 10px;
+}

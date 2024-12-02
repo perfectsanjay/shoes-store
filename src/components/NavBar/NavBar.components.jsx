@@ -53,9 +53,12 @@ const NavBar = () => {
           </button>
         </div>
         <div className="cart">
+          <Link to="shop/cart">
           <button className="cart-button">
             <FontAwesomeIcon icon={faBagShopping} />
           </button>
+          </Link>
+          
         </div>
       </div>
     </nav>

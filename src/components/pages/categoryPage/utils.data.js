@@ -30,7 +30,7 @@ const data = [
       },
       {
         id: 5,
-        name: "Converse x GOLF le FLEUR* Darryl Chuck 70",
+        name: "Converse x GOLF le FLEUR",
         imageUrl: "/shoes-images/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg",
         price: 8099,
       },
