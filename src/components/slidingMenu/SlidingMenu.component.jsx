@@ -13,7 +13,7 @@ const SlidingMenu = ({isOpen,toggleMenu}) => {
                     <li><Link to="/shop/kids" onClick={toggleMenu}>Kid's</Link></li>
                 </ul>
                   <button className="close-menu" onClick={toggleMenu}>X</button>
-                  <Link to="/"><img className="brand-logo-menu" src="/public/White and Black Simple Shoes Store Logo.png" alt="brandlogo" /></Link>
+                  <Link to="/"><img className="brand-logo-menu" src="/White and Black Simple Shoes Store Logo.png" alt="brandlogo" /></Link>
             </div>
             
             

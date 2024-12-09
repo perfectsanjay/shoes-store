@@ -27,6 +27,9 @@
  width: 200px;
  height: 40px;
  text-align: center;
+ cursor: pointer;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ transition: background-color 0.3s ease, transform 0.2s ease;
 
 
 
@@ -60,4 +63,10 @@
 
 .like-img-container{
     margin: 10px;
+}
+
+.size.selected{
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #0056b3;
 }
