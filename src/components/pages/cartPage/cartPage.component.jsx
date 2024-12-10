@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./cartPage.style.scss";
 import { clear_item_from_cart,remove_item,add_to_cart } from "../../../redux/cart/action";
+import StripeCheckoutButton from "../../stripe-button/stripe-button.component";
 
 const CartPage = () => {
   // Fetch cart items and total quantity from Redux store
@@ -70,9 +71,17 @@ const CartPage = () => {
             <h2>Summary</h2>
             <p>Total Items: {totalQuantity}</p>
             <p>Total Price: ₹{totalPrice}</p>
-            <button className="checkout-btn">CHECKOUT</button>
+            
+            <StripeCheckoutButton price={totalPrice}/>
+            <div className="test-warning">
+         *Please use the following test credit card for payments*
+         <br/>
+         4242 4242 4242 4242 - Exp: 01/25 -CVV: 123
+     </div>
           </div>
+         
         </div>
+        
       )}
     </div>
   );
