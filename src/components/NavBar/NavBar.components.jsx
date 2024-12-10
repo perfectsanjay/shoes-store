@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./NavBar.style.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import Cart_icon from "../cart-icon/cart-icon.component";
 
 import {
   faBars,
@@ -11,12 +12,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import SlidingMenu from "../slidingMenu/SlidingMenu.component";
 import Search from "../Search/Search.component";
-
+import CartDropDown from "../cart-dropdown/cart-dropdown.component";
+import { useDispatch } from "react-redux";
+import { toggle_cart_hidden } from "../../redux/cart/action";
 
 
 const NavBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
   const [isOpenSearch, setisOpenSearch] = useState(false)
+  const dispatch = useDispatch()
 
   const toggleSearch = () => {
     setisOpenSearch((prevState) => !prevState)
@@ -53,14 +57,17 @@ const NavBar = () => {
           </button>
         </div>
         <div className="cart">
-          <Link to="shop/cart">
-          <button className="cart-button">
+          
+          <button className="cart-button" onClick={()=>dispatch(toggle_cart_hidden())}>
             <FontAwesomeIcon icon={faBagShopping} />
+            <Cart_icon/>
           </button>
-          </Link>
+          
           
         </div>
+        <CartDropDown/>
       </div>
+      
     </nav>
    {isOpenMenu&&<SlidingMenu isOpen={isOpenMenu} toggleMenu = {toggleMenu}/>}
    {isOpenSearch&&<Search isOpen={isOpenSearch} toggleSearch={toggleSearch}/>}

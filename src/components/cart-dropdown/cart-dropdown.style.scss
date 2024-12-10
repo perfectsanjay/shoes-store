@@ -1,0 +1,64 @@
+.Cart-dropdown{
+    position:absolute;
+    top: 80px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 500;
+    overflow-y: scroll;
+
+    &.hidden{
+        display: none;
+    }
+
+}
+
+
+.go-check-btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: 100px;
+
+    
+
+
+}
+
+.dropdown-img{
+    width: 50px;
+    height: 70px;
+    
+}
+.cart-item{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+.cart-drop-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+span{
+    padding: 2px;
+}
+
+.dropdown-close{
+    background-color: white;
+    border-style: none;
+    font-size: large;
+    cursor: pointer;
+    position: absolute;
+    left: 310px;
+    top: 10px;
+
+
+}
