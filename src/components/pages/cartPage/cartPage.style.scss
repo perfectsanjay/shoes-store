@@ -62,3 +62,29 @@
     width: 200px;
     height: 50px;
 }
+
+.remove-cart-item-button{
+    position: absolute;
+    right: 500px;
+    background-color: white;
+    border-style: none;
+    font-size: large;
+    cursor: pointer;
+
+
+}
+
+.item-cart-name{
+    margin: 10px;
+}
+.arrow-cont{
+    display: flex;
+    gap: 20px;
+}
+
+.arrow-i{
+    cursor: pointer;
+}
+b{
+    font-size: large;
+}
