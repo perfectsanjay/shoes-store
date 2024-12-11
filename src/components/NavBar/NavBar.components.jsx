@@ -52,9 +52,11 @@ const NavBar = () => {
           </button>
         </div>
         <div className="profile">
+          <Link to="/signin">
           <button className="profile-button">
             <FontAwesomeIcon icon={faUser} />
           </button>
+          </Link>
         </div>
         <div className="cart">
           
