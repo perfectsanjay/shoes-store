@@ -11,8 +11,8 @@ const HomePage = () => {
         <>
       
         <Carousel/>
-        <BrandCategory/>
-        <div className="top-picks-container">
+         <BrandCategory/> 
+         <div className="top-picks-container">
             <h1 className="title-pick">Top Picks</h1>
             <div className="top-img">
                 <img className="first-pick" src="/shoes-images/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg" alt="top-picks" />
@@ -24,12 +24,12 @@ const HomePage = () => {
             </div>
 
         </div>
-        <Category/>
+         <Category/>
         <div className="JD-select">
             <h1 className="select-title">JD SELECT</h1>
             <img className="select-img" src="/shoes-images/colin-lloyd-7kTyDIfhKvk-unsplash.jpg" alt="select" />
         </div>
-        <Footer/>
+        <Footer/>   
 
         </>
     )

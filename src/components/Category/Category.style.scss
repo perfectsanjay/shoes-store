@@ -22,3 +22,14 @@
 .title{
     color: black;
 }
+
+@media screen and (max-width:600px) {
+    
+    .img-title-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

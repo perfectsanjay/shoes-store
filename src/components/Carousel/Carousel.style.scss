@@ -63,3 +63,16 @@
 .right-arrow{
     right: 30px;
 }
+
+@media screen and (max-width: 600px) {
+    .carousel-container{
+        height: 200px;
+    }
+    .left-arrow{
+        left: 1px;
+    }
+    .right-arrow{
+        right: 1px;
+    }
+
+}

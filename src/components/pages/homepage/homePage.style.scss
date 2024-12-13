@@ -38,3 +38,51 @@
     justify-content: center;
     align-items: center;
 }
+
+
+@media screen and (max-width:900px) {
+ .sub-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+ }
+
+ .top-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+
+   
+ .first-pick{
+    width: 80%;
+    height: 400px;
+    }
+
+ .second-pick{
+    width: 80%;
+    height: 400px;
+
+ }   
+
+ .select-img{
+    width: 80%;
+    height: 400px;
+ }
+ .JD-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.title-pick{
+    text-align: center;
+    margin-top: 30px;
+   }
+
+}

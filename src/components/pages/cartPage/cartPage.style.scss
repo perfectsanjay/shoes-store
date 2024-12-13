@@ -88,3 +88,38 @@
 b{
     font-size: large;
 }
+
+@media screen and (max-width: 600px) {
+    .cart-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    .cart-item-info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cart-sub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .img-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .cart-summary{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

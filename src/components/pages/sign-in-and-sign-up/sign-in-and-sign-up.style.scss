@@ -6,3 +6,11 @@
     margin-top: 50px;
     gap: 100px;
 }
+
+@media screen and (max-width: 600px) {
+    .signin-signup-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
