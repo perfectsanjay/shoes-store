@@ -3,6 +3,10 @@ import "./NavBar.style.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import Cart_icon from "../cart-icon/cart-icon.component";
+import { useSelector } from "react-redux";
+import SignOut from "../sign-out/sign-out.component";
+
+
 
 import {
   faBars,
@@ -17,9 +21,11 @@ import { useDispatch } from "react-redux";
 import { toggle_cart_hidden } from "../../redux/cart/action";
 
 
+
 const NavBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
   const [isOpenSearch, setisOpenSearch] = useState(false)
+  const currentUser = useSelector((state) => state.user.currentUser)
   const dispatch = useDispatch()
 
   const toggleSearch = () => {
@@ -52,11 +58,16 @@ const NavBar = () => {
           </button>
         </div>
         <div className="profile">
-          <Link to="/signin">
-          <button className="profile-button">
-            <FontAwesomeIcon icon={faUser} />
-          </button>
-          </Link>
+          {currentUser? (
+            <SignOut/>
+          ):(
+            <Link to="/signin">
+            <button className="profile-button">
+              <FontAwesomeIcon icon={faUser} />
+            </button>
+            </Link>
+          )}
+          
         </div>
         <div className="cart">
           
