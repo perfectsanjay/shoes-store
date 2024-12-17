@@ -5,8 +5,12 @@ import BrandCategory from "../../brandCategory/brandCategory.component";
 import Category from "../../Category/Category.component";
 import Footer from "../../footer/Footer.component";
 import { Link } from "react-router-dom";
+import data from "../categoryPage/utils.data";
 
 const HomePage = () => {
+
+    const top_pick_data = data.flatMap((top_pick) => top_pick.items).slice(7,10)
+
     return(
         <>
       
@@ -15,11 +19,14 @@ const HomePage = () => {
          <div className="top-picks-container">
             <h1 className="title-pick">Top Picks</h1>
             <div className="top-img">
-                <img className="first-pick" src="/shoes-images/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg" alt="top-picks" />
-                <div className="sub-top">
-                <img className="second-pick" src="/shoes-images/domino-studio-164_6wVEHfI-unsplash.jpg" alt="top-picks" />
-                <img className="second-pick" src="/shoes-images/felipepelaquim-6zO5VKogoZE-unsplash.jpg" alt="top-picks" />
+              {top_pick_data.map((image) => (
+                <div className="top-pick" key={image.id}>
+                    <Link to={`/shop/product/${image.id}`}>
+                    <img  className="img-top-pick" src={image.imageUrl} alt={image.name} />
+                    </Link>
+                    
                 </div>
+              ))}
                 
             </div>
 
@@ -27,7 +34,10 @@ const HomePage = () => {
          <Category/>
         <div className="JD-select">
             <h1 className="select-title">JD SELECT</h1>
-            <img className="select-img" src="/shoes-images/colin-lloyd-7kTyDIfhKvk-unsplash.jpg" alt="select" />
+            <Link to="/shop/product/11">
+            <img className="select-img" src='/shoes-images/anubhav-arora-g1vk_Bef2Xk-unsplash.jpg' />
+            </Link>
+            
         </div>
         <Footer/>   
 

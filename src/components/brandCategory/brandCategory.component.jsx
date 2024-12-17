@@ -1,27 +1,28 @@
 import React from "react";
 import './brandCategory.style.scss'
+import { Link } from "react-router-dom";
+import data from "../pages/categoryPage/utils.data";
 
-const brand_img_data = [
-    {id: 5 , url:"/shoes-images/irene-kredenets-dwKiHoqqxk8-unsplash.jpg" , alt:"image5",title:"NB"},
-    {id: 6 , url:"/shoes-images/matthew-hamilton-pO2bglTMJpo-unsplash.jpg" , alt:"image6", title:"Adidas"},
-    // {id: 7 , url:"src/assets/shoes-images/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg" , alt:"image7", title:"CONVERSE"},
-    {id: 7 , url:"/shoes-images/verity-sanders-q4ExhrHaSLY-unsplash.jpg" , alt:"image8", title: "H&M"},
-]
+
+const brand_category_data = data.flatMap((brand_category) => brand_category.items).slice(2,6)
 
 const BrandCategory = () => {
     return (
         <div className="brand-container">
             <h1 className="brand-title">Brands</h1>
             <div className="brand-img-container">
-            { brand_img_data.map((image) => (
+            { brand_category_data.map((image) => (
                 <div className="brand-img" key={image.id}>
-                <img className="img-brand" src={image.url} alt={image.alt} />
-                <h1 className="title">{image.title}</h1>
+                    <Link to={`shop/product/${image.id}`}>
+                    <img className="img-brand" src={image.imageUrl} alt={image.name} /> 
+                    </Link>
+               
+                <h1 className="title">{image.brand}</h1>
             </div>
             
             ))}
             </div>
-           
+                      
             
         </div>
     )

@@ -9,36 +9,42 @@ const data = [
         name: "Nike Air Jordan 1 Retro High",
         imageUrl: "/shoes-images/bhautik-patel-ui8yd5Qxv-Y-unsplash.jpg",
         price: 9000,
+
       },
       {
         id: 2,
         name: "Nike Running Zoom",
         imageUrl: "/shoes-images/domino-studio-164_6wVEHfI-unsplash.jpg",
         price: 10999,
+        brand: "Nike"
       },
       {
         id: 3,
         name: "UA Infinite Running Shoes",
         imageUrl: "/shoes-images/felipepelaquim-6zO5VKogoZE-unsplash.jpg",
         price: 8999,
+        brand: "NB"
       },
       {
         id: 4,
         name: "H&M Trainer",
         imageUrl: "/shoes-images/irene-kredenets-dwKiHoqqxk8-unsplash.jpg",
         price: 6099,
+        brand: "H&M"
       },
       {
         id: 5,
         name: "Converse x GOLF le FLEUR",
         imageUrl: "/shoes-images/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg",
         price: 8099,
+        brand:"Converse"
       },
       {
         id: 6,
         name: "H&M sneaker",
         imageUrl: "/shoes-images/james-gibson-kunCvIyfu50-unsplash.jpg",
         price: 5999,
+        brand: "H&M"
       },
       {
         id: 7,
