@@ -6,7 +6,7 @@ import NavBar from "../src/components/NavBar/NavBar.components";
 import ProductPage from "./components/pages/ProductPage/ProductPage.component";
 import CartPage from "./components/pages/cartPage/cartPage.component";
 import SignInAndSignUpPage from "./components/pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-import HomePage from "./components/pages/HomePage/HomePage.component";
+import HomePage from "./components/pages/homepage/homePage.component";
 
 function App() {
   return (
