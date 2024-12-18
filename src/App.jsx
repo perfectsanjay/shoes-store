@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import HomePage from './components/pages/homepage/homepage.component'
+import HomePage from 'src/components/pages/homepage/HomePage.component.jsx'
 import { Routes, Route } from 'react-router-dom'
 import CategoryPage from './components/pages/categoryPage/categoryPage.component'
 import data from './components/pages/categoryPage/utils.data'
@@ -27,4 +26,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
