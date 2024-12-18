@@ -1,4 +1,4 @@
-import HomePage from './components/pages/homepage/HomePage.component.jsx'
+import HomePage from './components/pages/HomePage/HomePage.component.jsx'
 import { Routes, Route } from 'react-router-dom'
 import CategoryPage from './components/pages/categoryPage/categoryPage.component'
 import data from './components/pages/categoryPage/utils.data'
