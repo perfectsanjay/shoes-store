@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomePage.style.scss";
+import "./homePage.style.scss";
 import Carousel from "../../Carousel/Carousel.component";
 import BrandCategory from "../../brandCategory/brandCategory.component";
 import Category from "../../Category/Category.component";
