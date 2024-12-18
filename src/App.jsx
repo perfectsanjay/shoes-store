@@ -1,4 +1,4 @@
-import HomePage from './components/pages/HomePage/HomePage.component.jsx'
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import CategoryPage from './components/pages/categoryPage/categoryPage.component'
 import data from './components/pages/categoryPage/utils.data'
@@ -6,6 +6,7 @@ import NavBar from '../src/components/NavBar/NavBar.components'
 import ProductPage from './components/pages/ProductPage/ProductPage.component'
 import CartPage from './components/pages/cartPage/cartPage.component'
 import SignInAndSignUpPage from './components/pages/sign-in-and-sign-up/sign-in-and-sign-up.component'
+import HomePage from './components/pages/HomePage/HomePage.component'
 
 function App() {
   
